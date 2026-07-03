@@ -37,7 +37,7 @@ class PISpectrometerHW(HardwareComponent):
     def setup(self):
 
         # Create logged quantities
-        self.settings.New("port", dtype=str, initial="COM3")
+        self.settings.New("port", dtype=str, initial="COM4")
         # if serial port echo is enabled, USB echo should be disabled
         self.settings.New("echo", dtype=bool, initial=True)
 
